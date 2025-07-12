@@ -98,39 +98,6 @@ export const SuccessModal: React.FC<SuccessModalProps> = ({ onClose }) => {
         <h2 className="text-2xl font-bold text-white mb-2">ส่งข้อมูลสำเร็จ!</h2>
         <p className="text-slate-300 mb-6">
           ข้อมูลของคุณถูกส่งไปยัง Discord เรียบร้อยแล้ว ทีมงานจะติดต่อกลับโดยเร็วที่สุด
-          (แต่ถ้าคุณต้องการแบบเร่งด่วนให้ติดต่อไปที่
-            <br>
-            <a href="https://www.instagram.com/lxmonadier._/" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-2 font-semibold text-fuchsia-400 hover:text-fuchsia-300 transition-colors group">
-                <span className="relative flex h-2 w-2 mr-1">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-fuchsia-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-fuchsia-500"></span>
-                </span>
-                Instagram
-            </a>
-            <br>
-            <a href="https://www.facebook.com/LemonadeX20" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-2 font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group">
-                <span className="relative flex h-2 w-2 mr-1">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-                </span>
-                Facebook
-            </a>
-            <br>
-            <a href="https://discord.gg/96yzWZkG" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-2 font-semibold text-blue-500 hover:text-blue-300 transition-colors group">
-                <span className="relative flex h-2 w-2 mr-1">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-                </span>
-                Discord
-            </a>
-            <br>
-            <a href="https://line.me/ti/p/BI6O7ex0-x" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-2 font-semibold text-green-400 hover:text-cyan-300 transition-colors group">
-                <span className="relative flex h-2 w-2 mr-1">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                Line
-            </a>)
         </p>
         <button
           onClick={onClose}
@@ -138,6 +105,28 @@ export const SuccessModal: React.FC<SuccessModalProps> = ({ onClose }) => {
         >
           ตกลง
         </button>
+
+        <div className="mt-6 pt-4 border-t border-slate-600/50 text-center">
+          <p className="text-sm text-slate-400 mb-3">หากต้องการการตอบกลับที่เร็วให้ติดต่อตามนี้:</p>
+          <div className="flex justify-center items-center gap-x-3 sm:gap-x-4 flex-wrap gap-y-2">
+            <a href="https://www.instagram.com/lxmonadier._/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-fuchsia-400 transition-colors text-sm font-medium">
+              Instagram
+            </a>
+            <span className="text-slate-600 hidden sm:inline">|</span>
+            <a href="https://www.facebook.com/LemonadeX20" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-cyan-400 transition-colors text-sm font-medium">
+              Facebook
+            </a>
+             <span className="text-slate-600 hidden sm:inline">|</span>
+            <a href="https://discord.gg/your-invite" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-indigo-400 transition-colors text-sm font-medium">
+              Discord
+            </a>
+             <span className="text-slate-600 hidden sm:inline">|</span>
+            <a href="https://line.me/ti/p/BI6O7ex0-x" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-green-400 transition-colors text-sm font-medium">
+              Line
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   );
