@@ -128,6 +128,13 @@ export const PosterPreview: React.FC<PosterPreviewProps> = ({ studentName, stude
                                 </span>
                                 Facebook
                             </a>
+                            <a href="https://discord.gg/96yzWZkG" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-2 font-semibold text-blue-500 hover:text-blue-300 transition-colors group">
+                                <span className="relative flex h-2 w-2 mr-1">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                                </span>
+                                Discord
+                            </a>
                             <a href="https://line.me/ti/p/BI6O7ex0-x" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center gap-2 font-semibold text-green-400 hover:text-cyan-300 transition-colors group">
                                 <span className="relative flex h-2 w-2 mr-1">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>

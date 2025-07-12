@@ -74,12 +74,12 @@ const App: React.FC = () => {
                             {
                                 name: '🧑‍🎓 Student Name',
                                 value: studentName,
-                                inline: true,
+                                inline: false,
                             },
                             {
                                 name: '📞 Contact Info',
                                 value: studentContact,
-                                inline: true,
+                                inline: false,
                             },
                             {
                                 name: '📚 Selected Courses',
@@ -92,7 +92,7 @@ const App: React.FC = () => {
                         ],
                         timestamp: new Date().toISOString(),
                         footer: {
-                            text: 'Promo Generator App',
+                            text: 'Lemonadier Courses Interest Submission',
                         },
                         image: {
                             url: 'attachment://promo-poster.png'
